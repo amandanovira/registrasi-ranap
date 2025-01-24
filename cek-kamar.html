@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Registrasi Rawat Inap</title>
+    <link rel="stylesheet" href="stylescek.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class= "topnav">
+        <a href="index.html"><i class ="fa fa-fw fa-home"></i>Home</a>
+      <a href="daftar-pasien.html"><i class="fa fa-fw fa-user"></i> Daftar Pasien</a>
+  </div>
+    <div class = "header">
+        <h2>Rumah Sakit Bersama</h2>
+    </div>
+
+    <section class="cek-kamar">
+    <div class="form-container">
+        <h2 class="form-title">Cek Kamar Tersedia</h2>
+        <p>Silakan pilih tipe kamar untuk melihat ketersediaan.</p>
+        <form class="cek-form"></form>
+            <div class="form-group">
+                <label for="room-type">Tipe Kamar</label>
+                <select id="room-type" name="room-type" required>
+                    <option>Pilih Tipe Kamar</option>
+                    <option value="VIP">VIP</option>
+                    <option value="kamar_1">Kamar 1</option>
+                    <option value="kamar_2">Kamar 2</option>
+                    <option value="kamar_3">Kamar 3</option>
+                </select>
+            </div>
+            <button type="button" class="submit-button" onclick="location.href='daftar-pasien.html'">Cek Ketersediaan</button>
+        </form>
+    </div>
+    </section>
+
+    <div class = "footer">
+        <p>Rumah Sakit Bersama</p>
+    </div>
+</body>
+</html>
